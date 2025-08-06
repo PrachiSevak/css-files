@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: cadetblue;
+    }
+    .box{
+        border: 1px solid grey;
+        width: 350px;
+        padding: 40px;
+        background-color:palevioletred;
+    }
+
+    label{
+        display: block;
+    }
+    .input{
+        width: 100%;
+        padding: 8px;
+   }
+</style>
+</head>
+
+<body>
+    <h1>Signup Form</h1>
+
+    <div class="box">
+        <form action="saveuser" method="post">
+
+            <label>FirstName</label>
+            <input type="text" class="input" name="firstName" placeholder="enter firstname" />
+
+            <br><br>
+
+            <label>Email</label>
+            <input type="email" class="input" name="email" placeholder="enter email" />
+            <br><br>
+
+            <label>Password</label>
+            <input type="password" class="input" name="password" placeholder="enter password"/>
+            <br><br>
+
+            <label>Gender</label>
+            Male<input type="radio" name="gender" value="male" />
+            Female<input type="radio" name="gender" value="female" />
+            <br><br>
+
+            <label>Hobby</label>
+            Cricket: <input type="checkbox" name="Hobby" value="Cricket" />
+            Basket Ball: <input type="checkbox" name="Hobby" value="Basket Ball" />
+            <br><br>
+
+            <label>D.o.b</label>
+            <input type="date" name="dob" class="input" min="2007-07-19" max="2007-07-29" />
+            <br><br>
+
+            <label>Salary</label>
+            <input type="number" name="number" class="input" min="1" />
+            <br><br>
+
+
+            <label>Contact Number</label>
+            <input type="tel" name="ContactNum" class="input" pattern="[6-9][0-9]{9}" placeholder="enter contact number"/>
+            <br><Br>
+
+            <label>Profile</label>
+            <input type="file" name="profile" class="input" /><Br><Br>
+
+
+            <label>City</label>
+            <select name="city" class="input">
+                <option>---Select City---</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Vadodara">Vadodara</option>
+            </select>
+            <br><br>
+
+            <label>Address</label>
+            <textarea class="input"></textarea>
+            <br><br>
+
+             
+            <input type="submit" value="Signup" />
+            <input type="reset" value="Clear" />
+
+        </form>
+    </div>
+</body>
+
+</html>
